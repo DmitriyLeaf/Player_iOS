@@ -100,6 +100,9 @@ extension SoundModel: Codable {
         cover = try? container.decode(Data.self, forKey: .cover)
         genre = try? container.decode(String.self, forKey: .genre)
         title = try? container.decode(String.self, forKey: .title)
+        
+        self.getItemByName()
+        self.getSoundInfo()
     }
     
     func encode(to encoder: Encoder) throws {

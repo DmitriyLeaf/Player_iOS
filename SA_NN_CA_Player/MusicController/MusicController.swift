@@ -97,7 +97,21 @@ struct MusicController {
         }
     }
     
+    func saveMusicToUserDef() {
+        MusicManager.shared.saveSoundsToUserDef(sounds: sounds)
+    }
+    
     mutating func getMusic() {
+        sounds = MusicManager.shared.getSounds()
+        if sounds.isEmpty {
+            print("Any sounds in user defaults ...")
+            getMusicFromPath()
+        } else {
+            print("Sounds was goted ...")
+        }
+    }
+    
+    mutating func getMusicFromPath() {
         if let url = Bundle.main.resourcePath {
             let folderUrl = URL(fileURLWithPath: url)
             
@@ -116,9 +130,13 @@ struct MusicController {
                 }
             } catch {
                 print("Error with files path ...")
+                return
             }
         } else {
             print("Get music: Path error ...")
+            return
         }
+        
+        saveMusicToUserDef()
     }
 }

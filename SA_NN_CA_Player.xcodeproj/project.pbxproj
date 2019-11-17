@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B87E46BA23817E30007E1E8A /* SoundModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87E46B923817E30007E1E8A /* SoundModel.swift */; };
+		B87E46BD2381BCCB007E1E8A /* MusicManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87E46BC2381BCCB007E1E8A /* MusicManager.swift */; };
 		B8FB0A4E237C6929009DD56F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FB0A4D237C6929009DD56F /* AppDelegate.swift */; };
 		B8FB0A50237C6929009DD56F /* MusicPlayerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FB0A4F237C6929009DD56F /* MusicPlayerVC.swift */; };
 		B8FB0A52237C6929009DD56F /* MusicListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FB0A51237C6929009DD56F /* MusicListVC.swift */; };
@@ -40,6 +41,7 @@
 
 /* Begin PBXFileReference section */
 		B87E46B923817E30007E1E8A /* SoundModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundModel.swift; sourceTree = "<group>"; };
+		B87E46BC2381BCCB007E1E8A /* MusicManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicManager.swift; sourceTree = "<group>"; };
 		B8FB0A4A237C6929009DD56F /* SA_NN_CA_Player.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SA_NN_CA_Player.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8FB0A4D237C6929009DD56F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B8FB0A4F237C6929009DD56F /* MusicPlayerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayerVC.swift; sourceTree = "<group>"; };
@@ -83,6 +85,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B87E46BB2381BC97007E1E8A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B8FB0A95237E09E9009DD56F /* UserDefUtils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		B87E46BE2381C2E3007E1E8A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B87E46B923817E30007E1E8A /* SoundModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		B8FB0A41237C6929009DD56F = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +120,8 @@
 		B8FB0A4C237C6929009DD56F /* SA_NN_CA_Player */ = {
 			isa = PBXGroup;
 			children = (
+				B87E46BE2381C2E3007E1E8A /* Models */,
+				B87E46BB2381BC97007E1E8A /* Utils */,
 				B8FB0A94237E09D6009DD56F /* MusicController */,
 				B8FB0A6C237D70F6009DD56F /* Extentions */,
 				B8FB0A64237D671A009DD56F /* MusicPlayer */,
@@ -169,9 +189,8 @@
 		B8FB0A94237E09D6009DD56F /* MusicController */ = {
 			isa = PBXGroup;
 			children = (
-				B8FB0A95237E09E9009DD56F /* UserDefUtils.swift */,
 				B8FB0A97237E0D98009DD56F /* MusicController.swift */,
-				B87E46B923817E30007E1E8A /* SoundModel.swift */,
+				B87E46BC2381BCCB007E1E8A /* MusicManager.swift */,
 			);
 			path = MusicController;
 			sourceTree = "<group>";
@@ -267,6 +286,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8FB0A52237C6929009DD56F /* MusicListVC.swift in Sources */,
+				B87E46BD2381BCCB007E1E8A /* MusicManager.swift in Sources */,
 				B8FB0A98237E0D98009DD56F /* MusicController.swift in Sources */,
 				B8FB0A6E237D7110009DD56F /* UIButtonExt.swift in Sources */,
 				B8FB0A96237E09E9009DD56F /* UserDefUtils.swift in Sources */,
