@@ -17,7 +17,6 @@
                     <tabBarItem key="tabBarItem" systemItem="topRated" id="p2j-I6-Ymy"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jat-Ty-9Df">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -135,8 +134,8 @@
                     </view>
                     <navigationItem key="navigationItem" title="Player" id="TEh-JD-a0R"/>
                     <connections>
-                        <outlet property="currentTime" destination="l72-gB-btB" id="jsj-1q-qvm"/>
-                        <outlet property="durationTime" destination="WCI-dY-b7b" id="G8f-Ax-UgW"/>
+                        <outlet property="currentTimeLabel" destination="l72-gB-btB" id="x8t-s1-K6K"/>
+                        <outlet property="durationTimeLabel" destination="WCI-dY-b7b" id="kgb-FU-Vau"/>
                         <outlet property="musicImage" destination="m82-Ye-35M" id="FDO-Jp-7ok"/>
                         <outlet property="musicName" destination="JSm-VT-qXR" id="6bC-71-G5d"/>
                         <outlet property="nextButton" destination="EXM-ic-rIV" id="U8u-K2-oCk"/>

@@ -29,7 +29,7 @@ extension MusicListVC: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: .default, reuseIdentifier: "soundReId")
-        cell.textLabel?.text = MusicController.shared.soundsNames[indexPath.row]
+        cell.textLabel?.text = MusicController.shared.sounds[indexPath.row].name
         if (MusicController.shared.soundPointer == indexPath.row) {
             cell.imageView?.image = UIImage(named: "playn")!
         }
@@ -42,7 +42,7 @@ extension MusicListVC: UITableViewDelegate, UITableViewDataSource {
             cell.imageView?.image = UIImage()
         }
         
-        MusicController.shared.pushSoundBy(id: indexPath.row)
+        MusicController.shared.pushBy(id: indexPath.row)
         MusicController.shared.play()
         
         musikListTableView.reloadData()

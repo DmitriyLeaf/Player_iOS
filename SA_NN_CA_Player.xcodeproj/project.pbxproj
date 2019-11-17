@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B87E46BA23817E30007E1E8A /* SoundModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87E46B923817E30007E1E8A /* SoundModel.swift */; };
 		B8FB0A4E237C6929009DD56F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FB0A4D237C6929009DD56F /* AppDelegate.swift */; };
 		B8FB0A50237C6929009DD56F /* MusicPlayerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FB0A4F237C6929009DD56F /* MusicPlayerVC.swift */; };
 		B8FB0A52237C6929009DD56F /* MusicListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FB0A51237C6929009DD56F /* MusicListVC.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B87E46B923817E30007E1E8A /* SoundModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundModel.swift; sourceTree = "<group>"; };
 		B8FB0A4A237C6929009DD56F /* SA_NN_CA_Player.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SA_NN_CA_Player.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8FB0A4D237C6929009DD56F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B8FB0A4F237C6929009DD56F /* MusicPlayerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayerVC.swift; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 			children = (
 				B8FB0A95237E09E9009DD56F /* UserDefUtils.swift */,
 				B8FB0A97237E0D98009DD56F /* MusicController.swift */,
+				B87E46B923817E30007E1E8A /* SoundModel.swift */,
 			);
 			path = MusicController;
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 				B8FB0A98237E0D98009DD56F /* MusicController.swift in Sources */,
 				B8FB0A6E237D7110009DD56F /* UIButtonExt.swift in Sources */,
 				B8FB0A96237E09E9009DD56F /* UserDefUtils.swift in Sources */,
+				B87E46BA23817E30007E1E8A /* SoundModel.swift in Sources */,
 				B8FB0A4E237C6929009DD56F /* AppDelegate.swift in Sources */,
 				B8FB0A50237C6929009DD56F /* MusicPlayerVC.swift in Sources */,
 			);
