@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  MagistrAndy
+//  SA_NN_CA_Player
 //
 //  Created by Dmitriy Kruglov on 11/13/19.
 //  Copyright © 2019 SPAlgorithm. All rights reserved.

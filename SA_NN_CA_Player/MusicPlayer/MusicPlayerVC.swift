@@ -57,6 +57,8 @@ class MusicPlayerVC: UIViewController {
                     self.updatePlayButton()
                     
                     self.musicImage.image = MusicController.shared.getSoundCover()
+                    
+                    print(self.progressSlider.value)
                 }
             }
         }
