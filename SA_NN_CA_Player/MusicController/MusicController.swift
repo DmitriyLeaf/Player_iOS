@@ -12,6 +12,7 @@ import UIKit
 
 struct MusicController {
     static var shared = MusicController()
+    private init() {}
     
     var audioPlayer = AVPlayer()
     
@@ -37,7 +38,11 @@ struct MusicController {
     }
     
     mutating func nextSound() {
-        soundPointer += 1
+        if let next = WeightManager.shared.getNext(sId: soundPointer) {
+            soundPointer = next
+        } else {
+            soundPointer += 1
+        }
         
         if soundPointer >= sounds.count {
             soundPointer = 0
@@ -47,7 +52,11 @@ struct MusicController {
     }
     
     mutating func prevSound() {
-        soundPointer -= 1
+        if let prev = WeightManager.shared.getPrew(sId: soundPointer) {
+            soundPointer = prev
+        } else {
+            soundPointer -= 1
+        }
         
         if soundPointer < 0 {
             soundPointer = sounds.count - 1

@@ -11,6 +11,8 @@ import Foundation
 struct MusicManager {
     static var shared = MusicManager()
     
+    private init() {}
+    
     var musicKeys = [String]()
     
     var key = "MusicKeys42"

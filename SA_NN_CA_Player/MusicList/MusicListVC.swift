@@ -28,10 +28,12 @@ extension MusicListVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: .default, reuseIdentifier: "soundReId")
+        let cell = UITableViewCell(style: .subtitle, reuseIdentifier: "soundReId")
         cell.textLabel?.text = MusicController.shared.sounds[indexPath.row].name
+        cell.detailTextLabel?.text = String(describing: WeightManager.shared.weights.weights[indexPath.row][indexPath.row])
         if (MusicController.shared.soundPointer == indexPath.row) {
             cell.imageView?.image = UIImage(named: "playn")!
+            cell.imageView?.clipsToBounds = true
         }
         return cell
     }

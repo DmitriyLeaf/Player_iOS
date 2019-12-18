@@ -24,6 +24,7 @@ class MusicPlayerVC: UIViewController {
         super.viewDidLoad()
         
         MusicController.shared.getMusic()
+        WeightManager.shared.get(soundCounts: MusicController.shared.getCountOfSounds())
         MusicController.shared.push()
         
         addObserver()
@@ -34,6 +35,7 @@ class MusicPlayerVC: UIViewController {
     }
 
     @IBAction func preButtonTapped(_ sender: Any) {
+        WeightManager.shared.prew(sId: MusicController.shared.soundPointer, value: progressSlider.value*100)
         MusicController.shared.prevSound()
         
         updatePlayerUI()
@@ -50,6 +52,7 @@ class MusicPlayerVC: UIViewController {
     }
     
     @IBAction func nextButtonTapped(_ sender: Any) {
+        WeightManager.shared.next(sId: MusicController.shared.soundPointer, value: progressSlider.value*100)
         MusicController.shared.nextSound()
         
         updatePlayerUI()
