@@ -2,7 +2,7 @@
 //  WeightModel.swift
 //  SA_NN_CA_Player
 //
-//  Created by Dmitriy Kruglov on 12/18/19.
+//  Created by Solomay on 12/18/19.
 //  Copyright © 2019 SPAlgorithm. All rights reserved.
 //
 
